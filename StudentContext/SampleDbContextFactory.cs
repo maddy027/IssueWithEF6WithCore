@@ -11,7 +11,7 @@ namespace StudentContext
 	{
 		StudentDbContext IDbContextFactory<StudentDbContext>.Create()
 		{
-			return new StudentDbContext(@"server=LQAM3133;Initial Catalog=Mar2018;user id=userid;password=pwd;Trusted_Connection=True;MultipleActiveResultSets=true");
+            return new StudentDbContext(@"Server=(localdb)\mssqllocaldb;Database=Mar2018;Trusted_Connection=True;MultipleActiveResultSets=true");
 		}
-	}
+    }
 }
